@@ -67,15 +67,16 @@ Student Form:
 *****=== PLAN===========********
 
 -UI         : Material UI
-- Routing: React Router DOM
+- Routing: React Router DOM : npm i react-router-dom @types/react-router-dom
 - Form    : React Hook Form v7
-- Form validation:  Yup
-- Http Client: axios 
+- Form validation:  Yup : npm install yup
+- Http Client: axios : npm install axios
 
 *==Routing=====
 
 /login : Login page
 /admin: Master layout for admin page
+
 /admin/dashboard: Dashboard
 /admin/students: Search students
 /admin/students/add: Add new student
@@ -87,8 +88,17 @@ Student Form:
 - SelectField
 - RadioGroupField
 
-*======= Happy Coding =======
+*======= LAYOUT UI =======
+*page:
+/login : 
+/admin: layout
 
+feature: /admin/dashboard
+feature: /admin/students
 
+auth
+|_login
+|_signup/register
+|_forget password
 
 
