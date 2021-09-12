@@ -33,6 +33,7 @@ export const counterSlice = createSlice({
       // doesn't actually mutate the state because it uses the Immer library,
       // which detects changes to a "draft state" and produces a brand new
       // immutable state based off those changes
+      // console.log("State: ", state.value);
       state.value += 1;
     },
     decrement: (state) => {
@@ -45,6 +46,7 @@ export const counterSlice = createSlice({
 
     // Saga
     incrementSaga: (state, action: PayloadAction<number>) => {
+      console.log("State: ", state.status , state.value);
       state.status = 'loading';
     },
     incrementSagaSucccess: (state, action: PayloadAction<number>) => {

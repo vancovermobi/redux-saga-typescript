@@ -1,0 +1,43 @@
+@baseUrl = http://js-post-api.herokuapp.com/api
+@var = students
+
+# Cities
+
+# @name getAll
+# GET {{baseUrl}}/{{var}}?_page=1&_limit=10
+# GET {{baseUrl}}/{{var}}?_page=1&_limit=10&name_like=mard
+GET {{baseUrl}}/{{var}}?_page=1&_limit=10&_sort=mark&_order=des
+
+###
+# @name getById
+GET {{baseUrl}}/{{var}}/b77be455-0496-4b10-b478-26f7717a9e66
+
+###
+# @name addNew
+POST {{baseUrl}}/{{var}}
+Content-Type: application/json
+
+{
+    "name": "Michale Test",
+    "age" : 27,
+    "mark": 9,
+    "gander": "male",
+    "city"  : "pt"
+}
+
+###
+# @name update
+PATCH  {{baseUrl}}/{{var}}/DO945Z4
+Content-Type: application/json
+
+{
+    "name": "Michale Test",
+    "age" : 27,
+    "mark": 10,
+    "gander": "male",
+    "city"  : "pt"
+}
+
+###
+# @name update
+DELETE   {{baseUrl}}/{{var}}/DO945Z4

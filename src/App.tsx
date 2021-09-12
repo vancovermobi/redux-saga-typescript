@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import logo from './logo.svg';
 import { Counter } from './features/counter/Counter';
 import './App.css';
+import cityAPI from 'api/cityAPI';
+import studentAPI from 'api/studentAPI';
 
 function App() {
+  useEffect(()=>{
+    cityAPI.getAll().then((res)=> console.log('Cities: ' , res));
+    studentAPI.getAll().then((res)=> console.log('Students: ' , res));    
+  });
   return (
     <div className="App">
       <header className="App-header">
