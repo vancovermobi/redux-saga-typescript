@@ -4,11 +4,11 @@ import { Counter } from './features/counter/Counter';
 import './App.css';
 import cityAPI from 'api/cityAPI';
 import studentAPI from 'api/studentAPI';
-
+import {ListParams} from 'models';
 function App() {
   useEffect(()=>{
     cityAPI.getAll().then((res)=> console.log('Cities: ' , res));
-    studentAPI.getAll().then((res)=> console.log('Students: ' , res));    
+    // studentAPI.getAll().then((res)=> console.log('Students: ' , res));    
   });
   return (
     <div className="App">
