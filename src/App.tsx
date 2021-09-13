@@ -10,17 +10,17 @@ import { Route, Switch } from 'react-router';
 
 function App() {
   const dispatch = useAppDispatch();
-  useEffect(() => {
-    cityAPI.getAll().then((res) => console.log('Cities: ', res));
-    // studentAPI.getAll().then((res)=> console.log('Students: ' , res));
-  });
+  // useEffect(() => {
+  //   cityAPI.getAll().then((res) => console.log('Cities: ', res));
+  //   // studentAPI.getAll().then((res)=> console.log('Students: ' , res));
+  // });
   return (   
     <div>
-      <Button
+      {/* <Button
         variant="contained"
         color="secondary"
         onClick={() => dispatch(authActions.logout()) }
-      >LogOut</Button>
+      >LogOut</Button> */}
       <Switch>
         <Route path="/login">
           {/* LOGIN PAGE */}

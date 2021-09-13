@@ -119,4 +119,5 @@ auth
 
 *=========Navigation -Redux Saga ======
 Using: connected-react-router
--> npm install --save connected-react-router
+-> npm install --save connected-react-router 
+-> npm i history@4.10.1 
