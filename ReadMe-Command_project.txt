@@ -66,8 +66,8 @@ Student Form:
 
 *****=== PLAN===========********
 
--UI         : Material UI
-- Routing: React Router DOM : npm i react-router-dom @types/react-router-dom
+-UI         : Material UI  : -> npm install @material-ui/core @material-ui/icons @material-ui/styles
+- Routing: React Router DOM : -> npm i react-router-dom @types/react-router-dom
 - Form    : React Hook Form v7
 - Form validation:  Yup : npm install yup
 - Http Client: axios : npm install axios
@@ -88,7 +88,7 @@ Student Form:
 - SelectField
 - RadioGroupField
 
-*======= LAYOUT UI =======
+*======= LAYOUT UI ======= tsdrp
 *page:
 /login : 
 /admin: layout
@@ -101,4 +101,22 @@ auth
 |_signup/register
 |_forget password
 
+import * as React from 'react';
 
+export interface IAppProps {}
+
+export function App(Props: IAppProps) {
+  return (
+    <div>
+        Notfound ... Error 1440
+    </div>
+    );
+}
+*=============Auth============
+auth
+|_authSlice: nơi chứa định nghĩa các Actions và Reducers
+|_authSaga: nơi chứa định nghĩa các Effects 
+
+*=========Navigation -Redux Saga ======
+Using: connected-react-router
+-> npm install --save connected-react-router
